@@ -3,13 +3,12 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "database-sharing"   # package name
+name = "dbsharing"
 version = "0.1.0"
-description = "Shared database, auth, and schema logic"
-authors = [{ name = "Ayush Khandelwal" }]
-dependencies = [
-    "fastapi",
-    "sqlalchemy",
-    "psycopg2-binary",
-    "pydantic",
-]
+description = "Shared database and auth code"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
